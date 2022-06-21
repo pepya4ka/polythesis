@@ -1260,7 +1260,7 @@
       \let\footnote\thanks
       {\titlefont\@title\par}%
       \vskip 1.5em%
-      {\large\lineskip .5em%
+      {\larg\lineskip .5em%
         \begin{tabular}[t]{c}%
           \@author
         \end{tabular}\par}%
@@ -1274,9 +1274,9 @@
 %%% From File: toc.dtx
 
 \def\@postskip{\texorpdfstring{\hskip1em}{  }}
-\newcommand\@pnumwidth{1.55em}
-\newcommand\@tocrmarg{2.55em}
-\newcommand\@dotsep{4.5}
+\def\@pnumwidth{1.55em}
+\def\@tocrmarg{2.55em}
+\def\@dotsep{4.5}
 \def\tocfill#1{%
   \leaders\hbox{$\m@th\mkern\@dotsep mu\hbox{#1}\mkern\@dotsep mu$}%
 }
