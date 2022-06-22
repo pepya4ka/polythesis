@@ -26,23 +26,27 @@
 }
 
 @misc{daikon,
-author = {},
 title = {Детектор динамических инвариантов Daikon},
+author = {Michael D. Ernst and Jeff H. Perkins and Philip J. Guo and Stephen McCamant and Carlos Pacheco and Matthew S. Tschantz and Chen Xiao},
 howpublished = {\url{https://plse.cs.washington.edu/daikon/}},
-month = {},
-year = {},
+year = {2007},
 note = {(Accessed on 06/21/2022)}
 }
 
-@ARTICLE{daikon_paper,
-  author={Ernst, M.D. and Cockrell, J. and Griswold, W.G. and Notkin, D.},
-  journal={IEEE Transactions on Software Engineering},
-  title={Dynamically discovering likely program invariants to support program evolution},
-  year={2001},
-  volume={27},
-  number={2},
-  pages={99-123},
-  doi={10.1109/32.908957}
+@article{daikon_paper,
+title = {The Daikon system for dynamic detection of likely invariants},
+journal = {Science of Computer Programming},
+volume = {69},
+number = {1},
+pages = {35-45},
+year = {2007},
+note = {Special issue on Experimental Software and Toolkits},
+issn = {0167-6423},
+doi = {https://doi.org/10.1016/j.scico.2007.01.015},
+url = {https://www.sciencedirect.com/science/article/pii/S016764230700161X},
+author = {Michael D. Ernst and Jeff H. Perkins and Philip J. Guo and Stephen McCamant and Carlos Pacheco and Matthew S. Tschantz and Chen Xiao},
+keywords = {Daikon, Dynamic analysis, Dynamic invariant detection, Inductive logic programming, Inference, Invariant, Likely invariant, Program understanding, Specification, Specification mining},
+abstract = {Daikon is an implementation of dynamic detection of likely invariants; that is, the Daikon invariant detector reports likely program invariants. An invariant is a property that holds at a certain point or points in a program; these are often used in assert statements, documentation, and formal specifications. Examples include being constant (x=a), non-zero (x≠0), being in a range (a≤x≤b), linear relationships (y=ax+b), ordering (x≤y), functions from a library (x=fn(y)), containment (x∈y), sortedness (xissorted), and many more. Users can extend Daikon to check for additional invariants. Dynamic invariant detection runs a program, observes the values that the program computes, and then reports properties that were true over the observed executions. Dynamic invariant detection is a machine learning technique that can be applied to arbitrary data. Daikon can detect invariants in C, C++, Java, and Perl programs, and in record-structured data sources; it is easy to extend Daikon to other applications. Invariants can be useful in program understanding and a host of other applications. Daikon’s output has been used for generating test cases, predicting incompatibilities in component integration, automating theorem proving, repairing inconsistent data structures, and checking the validity of data streams, among other tasks. Daikon is freely available in source and binary form, along with extensive documentation, at http://pag.csail.mit.edu/daikon/.}
 }
 
 @inproceedings{autoJML_paper,
@@ -54,15 +58,15 @@ note = {(Accessed on 06/21/2022)}
   organization={Citeseer}
 }
 
-@misc{autoJML, author = {}, title = {AutoJML - A JML Specification Generator}, howpublished = {\url{http://autojml.sourceforge.net/}}, month = {}, year = {}, note = {(Accessed on 06/21/2022)}}
+@misc{autoJML, author = {Engelbert Hubbers and Martijn Oostdijk }, title = {AutoJML - A JML Specification Generator}, howpublished = {\url{http://autojml.sourceforge.net/}}, year = {2003}, note = {(Accessed on 06/21/2022)}}
 
 @INPROCEEDINGS{AutoComment,  author={Wong, Edmund and Jinqiu Yang and Lin Tan},  booktitle={2013 28th IEEE/ACM International Conference on Automated Software Engineering (ASE)},   title={AutoComment: Mining question and answer sites for automatic comment generation},   year={2013},  volume={},  number={},  pages={562-567},  doi={10.1109/ASE.2013.6693113}}
 
 @INPROCEEDINGS{CloCom,  author={Wong, Edmund and Taiyue Liu and Tan, Lin},  booktitle={2015 IEEE 22nd International Conference on Software Analysis, Evolution, and Reengineering (SANER)},   title={CloCom: Mining existing source code for automatic comment generation},   year={2015},  volume={},  number={},  pages={380-389},  doi={10.1109/SANER.2015.7081848}}
 
 @misc{bcel,
+title = {Apache Commons BCEL – Home},
 author = {Apache Commons},
-title = {Apache Commons BCEL™ – Home},
 howpublished = {\url{https://commons.apache.org/proper/commons-bcel/}},
 month = {july},
 year = {2011},
@@ -70,10 +74,27 @@ note = {(Accessed on 06/22/2022)}
 }
 
 @misc{javaparser,
-author = {Nicholas Smith, Danny van Bruggen, Federico Tomassetti},
 title = {javaparser/javaparser: Java 1-15 Parser and Abstract Syntax Tree for Java, including preview features to Java 13},
+author = {Nicholas Smith, Danny van Bruggen, Federico Tomassetti},
 howpublished = {\url{https://github.com/javaparser/javaparser}},
 month = {january},
 year = {2013},
+note = {(Accessed on 06/22/2022)}
+}
+
+@misc{libsl_parser,
+title = {vorpal-research/libsl},
+author = {Vladislav Feofilaktov},
+howpublished = {\url{https://github.com/vorpal-research/libsl}},
+month = {august},
+year = {2021},
+note = {(Accessed on 06/22/2022)}
+}
+
+@misc{okhttp,
+title = {square/okhttp: Square’s meticulous HTTP client for the JVM, Android, and GraalVM.},
+author = {Jesse Wilson},
+howpublished = {\url{https://github.com/square/okhttp}},
+year = {2011},
 note = {(Accessed on 06/22/2022)}
 }
