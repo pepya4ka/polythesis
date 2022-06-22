@@ -179,7 +179,7 @@
   pages%
 }
 \newcommand\stats@fig{%
-  \cyrr\cyri\cyrs\cyru\cyrn\cyrk\cyro\cyrv%
+  \cyrr\cyri\cyrs\cyru\cyrn\cyrk\cyra%
 }
 \newcommand\stats@fig@en{%
   pictures%
