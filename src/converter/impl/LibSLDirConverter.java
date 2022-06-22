@@ -110,17 +110,18 @@ public class LibSLDirConverter implements Converting {
                         for (MethodDeclaration method : clazz.getMethods()) {
                             Fun fun = new Fun(method.getNameAsString());
 
-                            if (!clazz.asClassOrInterfaceDeclaration().isInterface()) {
-                                List<String> listOfParametersInImpactFromEnvironment = getListOfParametersInImpactFromEnvironment(method);
-                                List<String> listOfNameParamsOfMethod = method.getParameters()
-                                        .stream()
-                                        .map(parameter -> parameter.getName().asString())
-                                        .collect(Collectors.toList());
-                                Set<String> setOfNumberParams = listOfParametersInImpactFromEnvironment.stream()
-                                        .map(listOfNameParamsOfMethod::indexOf)
-                                        .map(i -> String.format("arg%d", i))
-                                        .collect(Collectors.toSet());
-                                fun.addParamsInImpactFromEnvironment(setOfNumberParams);
+                if (!clazz.asClassOrInterfaceDeclaration().isInterface()) {
+                    List<String> listOfParametersInImpactFromEnvironment
+                            = getListOfParametersInImpactFromEnvironment(method);
+                    List<String> listOfNameParamsOfMethod = method.getParameters()
+                            .stream()
+                            .map(parameter -> parameter.getName().asString())
+                            .collect(Collectors.toList());
+                    Set<String> setOfNumberParams = listOfParametersInImpactFromEnvironment.stream()
+                            .map(listOfNameParamsOfMethod::indexOf)
+                            .map(i -> String.format("arg%d", i))
+                            .collect(Collectors.toSet());
+                    fun.addParamsInImpactFromEnvironment(setOfNumberParams);
                             }
 
                             NodeList<Parameter> parameters = method.getParameters();
