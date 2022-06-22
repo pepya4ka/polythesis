@@ -9,7 +9,63 @@
 
 \lstinputlisting[
 label={listings:javaparser},
-caption={Код на Java},
+caption={Модель объекта TypeAlias},
 style=java,
 ]
-{src/changeLine.java}
+{src/libsl/TypeAlias.java}
+
+\lstinputlisting[
+label={listings:javaparser},
+caption={Модель объекта Automaton},
+style=java,
+]
+{src/libsl/Automaton.java}
+
+\lstinputlisting[
+label={listings:javaparser},
+caption={Модель объекта Fun},
+style=java,
+]
+{src/libsl/Fun.java}
+
+\lstinputlisting[
+label={listings:javaparser},
+caption={Интерфейс Converting},
+style=java,
+]
+{src/converter/Converting.java}
+
+\lstinputlisting[
+label={listings:javaparser},
+caption={Абстрактный класс LibSLConverter},
+style=java,
+]
+{src/converter/LibSLConverter.java}
+
+\lstinputlisting[
+label={listings:javaparser},
+caption={Реализация генерации для директории Java файлов},
+style=java,
+]
+{src/converter/impl/LibSLDirConverter.java}
+
+\lstinputlisting[
+label={listings:javaparser},
+caption={Реализация генерации для jar файлов},
+style=java,
+]
+{src/converter/impl/LibSLJarConverter.java}
+
+\lstinputlisting[
+label={listings:javaparser},
+caption={Пример использования с помощью LibSLDirConverter},
+style=java,
+]
+{src/exampleUsage/AnalysisFromDir.java}
+
+\lstinputlisting[
+label={listings:javaparser},
+caption={Пример использования с помощью LibSLJarConverter},
+style=java,
+]
+{src/exampleUsage/AnalysisFromJarFile.java}
