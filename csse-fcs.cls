@@ -210,14 +210,14 @@
   \IfEq{#2}{0}{}{%
   , #2~\stats@fig%
   }%
-  \IfEq{#3}{0}{}{%
-  , #3~\stats@table%
-  }%
+%  \IfEq{#3}{0}{}{%
+%  , #3~\stats@table%
+%  }%
 %  \IfEq{#4}{0}{}{%
 %  , #4~\stats@cite%
 %  }%
-  \IfEq{#4}{0}{}{%
-  , #4~\stats@appendix%
+  \IfEq{#3}{0}{}{%
+  , #3~\stats@appendix%
   }%
 }
 \newcommand\@stats@en[4]{%
