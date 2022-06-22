@@ -17,12 +17,12 @@
 В качестве простой библиотеки подразумевается небольшая самописная состоящая из нескольких простых классов и одного интерфейса
 
 Результат работы инструмента с этой библиотекой является lsl файл, фрагмент которого приведен ниже:
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\textwidth]{fig/my_libsl.png}
-\caption{Пример сгенерированного LibSL}%
-\label{fig:my_libsl}
-\end{figure}
+\lstinputlisting[
+label={listings:lsl},
+caption={Пример сгенерированного LibSL},
+style=text,
+]
+{src/lslcode/my_lsl.lsl}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Тестирование на библиотеке okhttp3}
@@ -31,12 +31,12 @@
 Для еще одного этапа тестирования была выбрана библиотека okhttp3
 
 Результат работы инструмента с этой библиотекой является lsl файл, фрагмент которого приведен ниже:
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\textwidth]{fig/okhttp_libsl.png}
-\caption{Пример сгенерированного LibSL для библиотеки okhttp}%
-\label{fig:okhttp_libsl}
-\end{figure}
+\lstinputlisting[
+label={listings:lsl},
+caption={Пример сгенерированного LibSL для библиотеки okhttp},
+style=text,
+]
+{src/lslcode/http_lsl.lsl}
 
 Для экономии места часть кода была удалена.
 
