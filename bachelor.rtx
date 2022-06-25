@@ -20,7 +20,7 @@
 \if@titlepage\renewcommand\maketitle[1][]{
 \ifthenelse{\equal{#1}{en}}{\@titlepage@entrue}{\@titlepage@enfalse}
 \if@titlepage@en
-  \def\appos{Head of Department}
+  \def\appos{SSSSSS}
   \def\approved{``Approved for defence''}
   \def\revname{Reviewer}
   \def\revsndname{\revname}
