@@ -46,9 +46,9 @@
 Для удобства работы с извлеченной информацией были созданы три основных модели объектов в языке LibSL:
 %
 \begin{itemize*}
-\item TypeAlias (~\ref{listings:TypeAlias});
-\item Automaton (~\ref{listings:Automaton});
-\item Fun (~\ref{listings:Fun});
+\item TypeAlias (\ref{listings:TypeAlias});
+\item Automaton (\ref{listings:Automaton});
+\item Fun (\ref{listings:Fun});
 \end{itemize*}
 %
 
@@ -105,7 +105,7 @@ style=java,
 \subsubsection{Описание псевдонимов типов}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Для каждого класса, который в исходной библиотеке, создается его описание. Для этого была создана модель TypeAlias (см.(~\ref{listings:TypeAlias})).
+Для каждого класса, который в исходной библиотеке, создается его описание. Для этого была создана модель TypeAlias (см.~\ref{listings:TypeAlias}).
 Аналогичная ситуация обстоит и с классами, которые не входят в состав библиотеки, но используется, например, в качестве типа выходного параметра функции или ее аргументов.
 
 Ниже, в листинге~\ref{listings:NewTypeAlias}, приведен метод, с помощью которого создается и сохраняется описание типа. На вход метод принимает имя класса.
@@ -130,6 +130,7 @@ style=java,
 {src/fragments/NewFunExample.java}
 
 Ниже, в листинге~\ref{listings:NewAutomatonExample}, приведен фрагмент кода, с помощью которого извлекается имя класса и создается новый объект Automaton, а также объект наполняется ранее созданным объектом Fun:
+\newpage
 \lstinputlisting[
 label={listings:NewAutomatonExample},
 caption={Создание объекта Automaton},
