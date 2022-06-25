@@ -1,0 +1,18 @@
+libsl "1.0.0";
+library polytech version "1.0.0" language "java" url "https://github.com";
+
+include java.util.Date;
+
+typealias String = String;
+typealias Person = Person;
+typealias Date = Date;
+
+automaton Person : Person {
+	initstate Created;
+
+	fun getName(): String;
+	fun getL(arg0: String): String;
+	fun setName(arg0: String): void;
+	fun getDate(): Date;
+	fun setDate(arg0: Date): void;
+}

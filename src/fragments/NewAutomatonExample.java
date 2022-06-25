@@ -1,0 +1,3 @@
+String simpleClazzName = clazz.getName().asString();
+        ...
+Automaton automaton = new Automaton(simpleClazzName);

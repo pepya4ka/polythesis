@@ -1,0 +1,25 @@
+libsl "1.0.0";
+library polytech version "1.0.0" language "java" url "https://github.com";
+
+include java.util.Date;
+
+typealias Experience = Experience;
+typealias Experience = Experience;
+typealias String = String;
+typealias Person = Person;
+typealias int = int;
+
+automaton Experience : Experience {
+	initstate Created;
+
+}
+
+automaton Person : Person {
+	initstate Created;
+
+	fun getName(): String;
+	fun getL(arg0: String): String;
+	fun setName(arg0: String): void;
+	fun work(arg0: Experience, arg1: int): void
+	    assigns arg1;
+}

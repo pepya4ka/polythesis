@@ -1,0 +1,26 @@
+libsl "1.0.0";
+library okhttp3 version "1.0.0" language "java" url "https://github.com";
+
+include java.util.concurrent.CountDownLatch;
+include okio.BufferedSource;
+include okio.Okio;
+include java.net.IDN;
+include okhttp3.internal.Util;
+include okhttp3.internal.Util.closeQuietly;
+include java.util.concurrent.atomic.AtomicBoolean;
+include okio.GzipSource;
+include java.io.IOException;
+include java.io.InterruptedIOException;
+include okhttp3.internal.platform.Platform;
+include java.io.InputStream;
+
+typealias String = String;
+typealias PublicSuffixDatabase = PublicSuffixDatabase;
+typealias PublicSuffixDatabase = PublicSuffixDatabase;
+
+automaton PublicSuffixDatabase : PublicSuffixDatabase {
+	initstate Created;
+
+	fun get(): PublicSuffixDatabase;
+	fun getEffectiveTldPlusOne(arg0: String): String;
+}
